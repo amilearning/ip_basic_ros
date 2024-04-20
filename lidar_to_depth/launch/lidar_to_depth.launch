@@ -1,0 +1,7 @@
+<launch>
+    <arg name="in_fill" default="false"/>
+
+    <node name="lidar_to_depth" pkg="lidar_to_depth" type="lidar_to_depth" required="true" output="screen" >
+        <param name="in_fill" value="$(arg in_fill)"/>
+    </node>
+</launch>
